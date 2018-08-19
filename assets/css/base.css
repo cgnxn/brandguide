@@ -1,0 +1,597 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Light.eot');
+    src: url('./fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('./fonts/Roboto-Light.woff') format('woff'), url('./fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.eot');
+    src: url('./fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/Roboto-Regular.woff') format('woff'), url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.eot');
+    src: url('./fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('./fonts/Roboto-Medium.woff') format('woff'), url('./fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aeternity-icons';
+    src: url('./fonts/aeternity-icons.ttf?wu8v54') format('truetype'), url('./fonts/aeternity-icons.woff?wu8v54') format('woff'), url('./fonts/aeternity-icons.svg?wu8v54#aeternity-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1e1e1e;
+    font-size: 16px;
+    line-height: 1.2;
+    /* min-width: 1024px; */
+}
+
+.index {
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#mobile-nav-trigger {
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #1e1e1e;
+    border-width: 3px 0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#mobile-nav-trigger:before,
+#mobile-nav-trigger:after {
+    display: block;
+    content: '';
+    /* width: 100%; */
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition: transform ease-out .2s, background-color ease-out .2s;
+    background-color: #1e1e1e;
+}
+
+#mobile-nav-trigger:before {
+    top: 6px;
+}
+
+#mobile-nav-trigger:after {
+    bottom: 6px;
+}
+
+.with-mobile-nav #mobile-nav-trigger {
+    border-width: 0;
+}
+
+.with-mobile-nav #mobile-nav-trigger:before {
+    transform: rotate(45deg) translate(2px, 1px);
+}
+
+.with-mobile-nav #mobile-nav-trigger:after {
+    transform: rotate(-45deg) translate(2px, -1px);
+}
+
+.with-mobile-nav #mobile-nav-trigger:before,
+.with-mobile-nav #mobile-nav-trigger:after {
+    background-color: #f7296E;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.index header {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.index header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 117px;
+    height: 19px;
+}
+.index header h1 a {
+    display: block;
+    text-indent: -9999px;
+    background-image: url('/brandguide/assets/images/aeternity.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.index img {
+    width: 117px;
+    height: 19px;
+    margin: 26px 0 22px 50px;
+}
+
+.index ol {
+    font-size: 16px;
+    line-height: 19px;
+    list-style: none;
+}
+
+.index .main-list {
+    display: block;
+}
+
+.index .main-list a {
+    display: block;
+    text-decoration: none;
+}
+
+.index .main-list ol li {
+    margin-top: 9px;
+}
+
+.index a:hover, .index a.active {
+    color: #f03c6e;
+}
+
+.index .main-list .main-list-item {
+    margin-top: 12px;
+}
+
+.index .main {
+    position: relative;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.index .main:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'aeternity-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+#nav-logo .main:before {
+    content: '\e901';
+}
+
+#nav-colors .main:before {
+    content: '\e900';
+}
+
+#nav-typography .main:before {
+    content: '\e902';
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.page h1 {
+    font-weight: bold;
+}
+
+.purple {
+    background-color: #311B58;
+    color: #fff;
+}
+
+.magenta {
+    background-color: #F7296E;
+    color: #fff;
+}
+
+.misuse ul {
+    display: block;
+    font-size: 0;
+}
+
+.misuse li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.misuse figure {
+    margin: 0 auto;
+}
+
+.misuse .no {
+    color: #FF0000;
+}
+
+.download-logo .button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 80px;
+    margin: auto;
+    text-align:center;
+}
+.download-logo a.button-download {
+    display: block;
+    width: 260px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #F7296E;
+    border-radius: 50px;
+}
+.download-logo .button-container a.button-download:hover {
+	text-decoration:none;
+}
+
+.download-logo .button-container p {
+	line-height:38px;
+	font-size: 14px;
+}
+.download-logo .button-container a {
+	text-decoration:none;
+}
+.download-logo .button-container a:hover {
+	text-decoration:underline;
+}
+
+
+.logo figure {
+    position: absolute;
+    margin: auto;
+}
+
+.logo figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#logo-misuse figure span {
+    display: block;
+}
+
+
+li.neutral {
+    background-color: #F5F5F5;
+}
+
+li.normal {
+    background-color: #dcdcdc;
+}
+
+li.dramatic {
+    background-color: #F7296E;
+    color: #fff;
+}
+
+li.exciting {
+    background-color: #311B58;
+    color: #fff;
+}
+
+li.dark {
+    background-color: #383838;
+    color: #fff;
+}
+
+li.darker {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+li.darkest {
+    background-color: #000;
+    color: #fff;
+}
+
+
+li.plain {
+    background-color: #ffffff;
+}
+
+
+.gradients li {
+    background-color: #eee;
+    position: relative;
+}
+
+.gradients li.neutral-gradient {
+    background: linear-gradient(to right, #fff, #F1F4F7);
+    color: #1e1e1e;
+}
+
+.gradients li.active-gradient {
+    background: linear-gradient(to right, #F22F70, #42255C);
+    color: #fff;
+}
+
+.gradients li.inactive-gradient {
+    background: linear-gradient(to right, #6F53A1, #311B58);
+    color: #fff;
+}
+
+.gradients .from {
+    position: absolute;
+}
+
+.gradients b {
+    position: absolute;
+}
+
+.gradients .to {
+    position: absolute;
+
+}
+
+.ratios-dark header {
+    color: #fff;
+}
+
+.ratios ul {
+    display: block;
+}
+
+.ratios li {
+    display: block;
+}
+
+
+.ratios-light .plain span,
+.ratios-light .normal span,
+.ratios-light .neutral span,
+.ratios-light .dramatic span,
+.ratios-light .exciting span,
+.ratios-dark .exciting span,
+.ratios-dark .plain span,
+.ratios-dark .neutral span,
+.ratios-dark .dramatic span {
+    position: absolute;
+}
+
+.horizontal figure {
+    text-align: center;
+}
+.horizontal ul {
+    display: block;
+}
+.horizontal li figcaption {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.stacked li {
+    text-align: center;
+}
+.stacked li img {
+    height: auto;
+}
+
+
+.typography-general .columns {
+    display: block;
+}
+
+.typography-general .column {
+    box-sizing: border-box;
+}
+
+.typography-general .column:last-child {
+    background-color: #311B58;
+    color: #fff;
+}
+
+.typography-general .column li {
+    display: block;
+}
+
+.typography-general .roboto-light-50 {
+    font-weight: 300;
+}
+
+.typography-general .roboto-bold-50 {
+    font-weight: bold;
+}
+
+.typography-general .roboto-bold-30 {
+    font-weight: bold;
+}
+
+.typography-general .roboto-bold-24 {
+    font-weight: bold;
+}
+
+.typography-general .roboto-medium-16 {
+    font-weight: 500;
+}
+
+.typography-general .roboto-medium-14 {
+    font-weight: 500;
+}
+
+#typography-left .roboto-medium-14 {
+    color: #727272;
+}
+
+#typography-left .roboto-regular-16 {
+    color: #727272;
+}
+
+.typography-mobile ul {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 375px;
+    background: #eee;
+    background: linear-gradient(to bottom, #fff, #f1f4f7);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.typography-mobile ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 22px;
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+.typography-mobile .roboto-bold-30 p {
+    font-weight: bold;
+}
+
+.typography-mobile .roboto-bold-30 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-mobile .roboto-bold-24 p {
+    font-weight: bold;
+}
+
+.typography-mobile .roboto-bold-24 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-mobile .roboto-bold-16 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-mobile .p-normal span {
+    font-weight: bold;
+    color: #989898;
+}
+
+.typography-mobile .p-neutral p {
+    color: #989898;
+}
+
+.typography-mobile .p-neutral span {
+    font-weight: bold;
+    color: #989898;
+}
+
+
+.typography-desktop ul {
+    max-width: 950px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #fff, #f1f4f7);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.typography-desktop ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: url(../images/logo-desktop.png) #311B58;
+    background-repeat: no-repeat;
+}
+
+.typography-desktop .roboto-light-50 p {
+    font-weight: 300;
+}
+
+.typography-desktop .roboto-light-50 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-desktop .roboto-bold-50 p {
+    font-weight: bold;
+}
+
+.typography-desktop .roboto-bold-50 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-desktop .roboto-bold-24 p {
+    font-weight: bold;
+}
+
+.typography-desktop .roboto-bold-24 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-desktop .roboto-bold-16 p {
+    font-weight: 500;
+}
+
+.typography-desktop .roboto-bold-16 span {
+    font-weight: 500;
+    color: #989898;
+}
+
+
+.typography-desktop .p-normal span {
+    font-weight: 500;
+    color: #989898;
+}
+
+.typography-desktop .p-neutral p {
+    color: #989898;
+}
+
+.typography-desktop .p-neutral span {
+    font-weight: 500;
+    color: #989898;
+}
